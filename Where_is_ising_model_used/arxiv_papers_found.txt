@@ -1,0 +1,726 @@
+Below is the properly formatted output of the provided arXiv entries, organized with consistent structure and clarity:
+
+---
+
+**1. arXiv:2505.13933 [quant-ph, econ.EM, q-fin.ST]**
+**Title:** Quantum Reservoir Computing for Realized Volatility Forecasting
+**Authors:** Qingyu Li, Chiranjib Mukhopadhyay, Abolfazl Bayat, Ali Habibnia
+**Abstract:** This study integrates quantum computation with machine learning to model nonlinear temporal dependencies in high-dimensional time series. Quantitative finance and econometrics stand to benefit significantly from emerging quantum technologies. We explore the application of quantum reservoir computing for forecasting realized volatility.
+**Submitted:** 20 May, 2025; originally announced May 2025
+**Comments:** 18 pages, 8 figures, 4 tables. Comments and suggestions welcome
+**Formats:** [pdf, ps, other]
+
+---
+
+**2. arXiv:2505.08074 [quant-ph, cs.CE, cs.DM, physics.app-ph, physics.comp-ph]**
+**Title:** QUEST: QUantum-Enhanced Shared Transportation
+**Authors:** Chinonso Onah, Neel Miscasci, Carsten Othmer, Kristel Michielsen
+**Abstract:** We compare solutions to a transportation problem using a Gurobi-based solver and brute-force enumeration of binary vectors. The problem is encoded as a Quadratic Unconstrained Binary Optimization (QUBO) and mapped to an Ising Hamiltonian, enabling the use of the Quantum Approximate Optimization Algorithm (QAOA) and other quantum and classical annealing technologies. Our quantum implementation demonstrates success.
+**Submitted:** 12 May, 2025; originally announced May 2025
+**Comments:** 11 pages, 7 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**3. arXiv:2504.19050 [q-fin.ST]**
+**Title:** Phase Transitions in Financial Markets Using the Ising Model: A Statistical Mechanics Perspective
+**Author:** Bruno Giorgio
+**Abstract:** This dissertation examines the Ising model's ability to replicate statistical characteristics (stylized facts) in financial assets, focusing on the S&P500 index. Features analyzed include volatility clustering, negative skewness, heavy tails, absence of autocorrelation in returns, and presence of other patterns.
+**Submitted:** 26 April, 2025; originally announced April 2025
+**Formats:** [pdf, other]
+
+---
+
+**4. arXiv:2504.10384 [eess.SY, cs.CL]**
+**Title:** A 10.8mW Mixed-Signal Simulated Bifurcation Ising Solver using SRAM Compute-In-Memory with 0.6us Time-to-Solution
+**Authors:** Alana Marie Dee, Sajjad Moazeni
+**Abstract:** This work presents a simulated bifurcation (SB) solver for combinatorial optimization problems, applicable in fields like finance and wireless networks. The solver achieves a 10.8mW power consumption and a 0.6µs time-to-solution using SRAM compute-in-memory.
+**Submitted:** 14 April, 2025; originally announced April 2025
+**Formats:** [pdf, other]
+
+---
+
+**5. arXiv:2411.15813 [cond-mat.dis-nn, cs.CE, cs.LG, cs.MA, hep-lat]**
+**Title:** Lattice Field Theory as a Multi-Agent System of Financial Markets
+**Author:** Dimitrios Bachtis
+**Abstract:** Lattice field theory offers enhanced representational capacity compared to multi-agent systems based on Ising models for modeling financial markets.
+**Submitted:** 24 November, 2024; originally announced November 2024
+**Comments:** Code available at https://github.com/dbachtis/phifm
+**Formats:** [pdf, other]
+
+---
+
+**6. arXiv:2411.08405 [cs.CE, math.OC]**
+**Title:** An Ising Machine Formulation for Design Updates in Topology Optimization of Flow Channels
+**Authors:** Yudai Suzuki, Shiori Aoki, Fabian Key, Katsuhiro Endo, Yoshiki Matsuda, Shu Tanaka, Marek Behr, Mayu Muramatsu
+**Abstract:** Topology optimization enhances the design and efficiency of flow channels. Ising machines, including digital or quantum annealers, serve as efficient solvers for combinatorial optimization problems. This work demonstrates their application beyond combinatorial optimization for flow channel design updates.
+**Submitted:** 13 November, 2024; originally announced November 2024
+**Formats:** [pdf, other]
+
+---
+
+**7. arXiv:2309.15642 [quant-ph, cond-mat.str-el, cs.CE, cs.LG]**
+**Title:** Efficient Tensor Network Simulation of IBM's Largest Quantum Processors
+**Authors:** Siddhartha Patra, Saeed S. Jahromi, Sukhbinder Singh, Roman Orus
+**Abstract:** We simulate the dynamics of a complex quantum many-body system, specifically the kicked Ising experiment on IBM’s Eagle (127 qubits), Osprey (433 qubits), and Condor (1121 qubits) processors, using graph-based Projected Entangled Pair States (gPEPS).
+**Submitted:** 2 April, 2024; v1 submitted 27 September, 2023; originally announced September 2023
+**Comments:** 7 pages, 8 figures, revised version
+**Journal:** Phys. Rev. Research 6, 013326 (2024)
+**DOI:** 10.1103/PhysRevResearch.6.013326
+**Formats:** [pdf, other]
+
+---
+
+**8. arXiv:2308.04769 [cs.ET, cs.CE, q-fin.PM]**
+**Title:** Correlation-Diversified Portfolio Construction by Finding Maximum Independent Set in Large-Scale Market Graph
+**Authors:** Ryo Hidaka, Yohei Hamakawa, Jun Nakayama, Kosuke Tatsumura
+**Abstract:** We construct a diversified portfolio by solving the Maximum Independent Set (MIS) problem for a large-scale market graph using a combinatorial optimization solver based on simulated bifurcation (SB), an Ising machine. The investment performance is evaluated using long-term historical market data.
+**Submitted:** 9 August, 2023; originally announced August 2023
+**Comments:** 14 pages, 9 figures, 4 tables
+**Journal:** IEEE Access 11, pp. 142979–142991 (2023)
+**DOI:** 10.1109/ACCESS.2023.3341422
+**Formats:** [pdf, other]
+
+---
+
+**9. arXiv:2307.06339 [cs.ET, q-fin.ST]**
+**Title:** Real-Time Trading System Based on Selections of Potentially Profitable, Uncorrelated, and Balanced Stocks by NP-Hard Combinatorial Optimization
+**Authors:** Kosuke Tatsumura, Ryo Hidaka, Jun Nakayama, Tomoya Kashimata, Masaya Yamasaki
+**Abstract:** We propose a real-time trading system formulated as NP-hard combinatorial optimization, solved using Ising machines. This system selects potentially profitable, uncorrelated, and balanced stocks, enabling efficient trading.
+**Submitted:** 12 July, 2023; originally announced July 2023
+**Comments:** 12 pages, 5 figures. Note: text overlap with arXiv:2307.05923
+**Journal:** IEEE Access 11, pp. 120023–1200336 (2023)
+**DOI:** 10.1109/ACCESS.2023.3326816
+**Formats:** [pdf, other]
+
+---
+
+**10. arXiv:2305.08056 [quant-ph, eess.SY, math.OC, q-fin.PM]**
+**Title:** Hybrid Quantum Algorithms Integrating QAOA, Penalty Dephasing, and Zeno Effect for Solving Binary Optimization Problems with Multiple Constraints
+**Authors:** Ke Wan, Yiwen Liu
+**Abstract:** This paper presents a hybrid quantum framework combining QAOA, penalty dephasing, and the Zeno effect to address binary optimization problems with multiple constraints, overcoming limitations of conventional Ising representations.
+**Submitted:** 13 May, 2023; originally announced May 2023
+**Comments:** 21 pages, 15 figures
+**Formats:** [pdf, other]
+
+---
+
+**11. arXiv:2305.00585 [q-fin.TR, cond-mat.stat-mech, cs.SI, physics.soc-ph]**
+**Title:** Prospects of BRICS Currency Dominance in International Trade
+**Authors:** Célestin Coquidé, José Lages, Dima L. Shepelyansky
+**Abstract:** We model trade currency preferences using Ising-type interactions on the world trade network, adapted from magnetic spin systems. The analysis predicts the potential for BRICS currency dominance in international trade.
+**Submitted:** 30 April, 2023; originally announced May 2023
+**Comments:** 18 pages, 3 figures. Appendix: 4 figures, 3 tables
+**Journal:** Appl Netw Sci 8, 65 (2023)
+**DOI:** 10.1007/s41109-023-00590-3
+**Formats:** [pdf, other]
+
+---
+
+**12. arXiv:2211.07180 [q-fin.TR, cond-mat.stat-mech, cs.SI, physics.soc-ph]**
+**Title:** Dollar-Yuan Battle in the World Trade Network
+**Authors:** Célestin Coquidé, José Lages, Dima L. Shepelyansky
+**Abstract:** Using Ising spin interactions on the world trade network, we analyze currency preferences. From 2010 onward, a transition occurred, with most countries preferring the Yuan over the Dollar.
+**Submitted:** 23 February, 2023; v1 submitted 14 November, 2022; originally announced November 2022
+**Comments:** 19 pages, 12 figures (7 supplementary), 6 tables
+**Journal:** Entropy 2023, 25(2), 373
+**DOI:** 10.3390/e25020373
+**Formats:** [pdf, other]
+
+---
+
+**13. arXiv:2204.04574 [quant-ph]**
+**Title:** Quantum-Inspired Solvers on Mixed-Integer Linear Programming Problem
+**Authors:** Hao Wang, Yu Pan, Wei Cui
+**Abstract:** Mixed-integer linear programming (MILP) is critical in fields like AI, biochemistry, finance, and cryptography. Quantum-inspired solvers address resource consumption challenges due to MILP complexity and the failure of Moore's Law.
+**Submitted:** 9 April, 2022; originally announced April 2022
+**Formats:** [pdf, ps, other]
+
+---
+
+**14. arXiv:2112.06290 [physics.soc-ph, cond-mat.dis-nn, econ.TH, q-fin.ST]**
+**Title:** A q-Spin Potts Model of Markets: Gain-Loss Asymmetry in Stock Indices as an Emergent Phenomenon
+**Author:** Stefan Bornholdt
+**Abstract:** We propose a q-spin Potts model to study market dynamics, extending Ising models by allowing more than two states (buy, sell, or hold). The model captures gain-loss asymmetry in stock indices as an emergent phenomenon.
+**Submitted:** 12 December, 2021; originally announced December 2021
+**Comments:** 14 pages, 3 figures
+**Journal:** Physica A 588, 126565 (2022)
+**Formats:** [pdf, other]
+
+---
+
+**15. arXiv:2111.04766 [cond-mat.stat-mech, cond-mat.dis-nn]**
+**Title:** Exact Statistical Mechanics of the Ising Model on Networks
+**Author:** Konstantin Klemm
+**Abstract:** The Ising model, an equilibrium stochastic process, is applied in fields like magnetism, geophysics, neuroscience, and sociology. This work provides an exact statistical mechanics analysis on networks.
+**Submitted:** 8 November, 2021; originally announced November 2021
+**Comments:** 4 pages, 3 figures
+**Formats:** [pdf, other]
+
+---
+
+**16. arXiv:2107.03857 [q-fin.ST, hep-th, nlin.CG, physics.soc-ph, q-fin.GN]**
+**Title:** Financial Markets and the Phase Transition Between Water and Steam
+**Author:** Christof Schmidhuber
+**Abstract:** We model financial markets using a gas molecule analogy, where shares are distributed across a hidden social network of investors, equivalent to the Ising model. Magnetization represents price deviation from value, with markets driving toward critical temperature in efficient states.
+**Submitted:** 15 December, 2021; v1 submitted 8 July, 2021; originally announced July 2021
+**Comments:** 34 pages, 7 figures, updated section 4, added predictions for Hurst exponents
+**Journal:** Physica A 2022, 126873
+**DOI:** 10.1016/j.physa.2022.126873
+**Formats:** [pdf, other]
+
+---
+
+**17. arXiv:2007.15545 [q-fin.ST, cond-mat.dis-nn, physics.data-an, physics.soc-ph]**
+**Title:** Modelling Time-Varying Interactions in Complex Systems: The Score Driven Kinetic Ising Model
+**Authors:** Carlo Campajola, Domenico Di Gangi, Fabrizio Lillo, Daniele Tantari
+**Abstract:** We introduce a generalization of the Kinetic Ising Model (KIM) to model time-varying interactions in complex systems, minimizing arbitrary dynamics assumptions.
+**Submitted:** 3 August, 2021; v1 submitted 30 July, 2020; originally announced July 2020
+**Formats:** [pdf, other]
+
+---
+
+**18. arXiv:2002.06003 [quant-ph]**
+**Title:** Quantum Algorithms for Hedging and the Learning of Ising Models
+**Authors:** Patrick Rebentrost, Yassine Hamoudi, Maharshi Ray, Xin Wang, Siyi Yang, Miklos Santha
+**Abstract:** We propose a quantum algorithm for hedging and learning Ising models, inheriting guarantees from classical algorithms with polynomial speedups, applicable in finance and machine learning.
+**Submitted:** 30 November, 2020; v1 submitted 14 February, 2020; originally announced February 2020
+**Comments:** 16 pages
+**Journal:** Phys. Rev. A 103, 012418 (2021)
+**DOI:** 10.1103/PhysRevA.103.012418
+**Formats:** [pdf, ps, other]
+
+---
+
+**19. arXiv:1909.10807 [q-fin.TR, q-fin.ST]**
+**Title:** Unveiling the Relation Between Herding and Liquidity with Trader Lead-Lag Networks
+**Authors:** Carlo Campajola, Fabrizio Lillo, Daniele Tantari
+**Abstract:** Using the Kinetic Ising model, we reconstruct trader opinions (buy/sell) from trade records, revealing herding effects and liquidity dynamics in financial markets.
+**Submitted:** 6 March, 2020; v1 submitted 24 September, 2019; originally announced September 2019
+**Journal:** Quantitative Finance 2020
+**DOI:** 10.1080/14697688.2020.1763442
+**Formats:** [pdf, other]
+
+---
+
+**20. arXiv:1908.07341 [physics.comp-ph, cond-mat.stat-mech, cs.CE, math.PR]**
+**Title:** Parallel Simulation of Two-Dimensional Ising Models Using Probabilistic Cellular Automata
+**Authors:** Roberto D'Autilia, Louis Nantenaina Andrianaivo, Alessio Troiani
+**Abstract:** We simulate 2D Ising models using probabilistic cellular automata, comparing CPU (Julia) and GPU (CUDA) implementations. The equilibrium measure relates to the Gibbs measure.
+**Submitted:** 5 August, 2019; originally announced August 2019
+**MSC Class:** 82B20, 82B80, 82C20, 82C80, 81T80
+**Formats:** [pdf, other]
+
+---
+
+**21. arXiv:1904.10625 [physics.soc-ph, cond-mat.stat-mech, cs.SI, q-fin.GN]**
+**Title:** Optimization of the Post-Crisis Recovery Plans in Scale-Free Networks
+**Authors:** Mohammad Bahrami, Narges Chinichian, Ali Hosseiny, Gholamreza Jafari, Marcel Ausloos
+**Abstract:** Using the Ising model, we study metastable features of economic networks to optimize post-crisis recovery plans in scale-free networks.
+**Submitted:** 23 October, 2019; v1 submitted 23 April, 2019; originally announced April 2019
+**Comments:** To appear in Physica A
+**Journal:** Physica A 2019, 123203
+**DOI:** 10.1016/j.physa.2019.123203
+**Formats:** [pdf, ps, other]
+
+---
+
+**22. arXiv:1901.08764 [q-fin.MF]**
+**Title:** Lattice Investment Projects Support Process Model with Corruption
+**Authors:** O. A. Malafeyev, S. A. Nemnyugin
+**Abstract:** We formulate a lattice model for investment projects with corruption, based on the Ising model, analyzing agent decisions on participation in corrupt activities.
+**Submitted:** 25 January, 2019; originally announced January 2019
+**Formats:** [pdf, other]
+
+---
+
+**23. arXiv:1801.05947 [q-fin.CP]**
+**Title:** Large-Scale Simulation of Multi-Asset Ising Financial Markets
+**Author:** Tetsuya Takaishi
+**Abstract:** We simulate a multi-asset Ising financial market, reproducing fat-tailed return distributions, volatility clustering, and unstable periods indicated by the volatility index.
+**Submitted:** 18 January, 2018; originally announced January 2018
+**Comments:** 10 pages, 9 figures
+**Journal:** J. Phys.: Conf. Ser. 820, 012016 (2017)
+**DOI:** 10.1088/1742-6596/820/1/012016
+**Formats:** [pdf, other]
+
+---
+
+**24. arXiv:1611.08088 [q-fin.ST, q-fin.CP]**
+**Title:** Multiple Time Series Ising Model for Financial Market Simulations
+**Author:** Tetsuya Takaishi
+**Abstract:** We propose an Ising model for multiple financial time series, reproducing volatility clustering and non-zero cross-correlations observed in real markets.
+**Submitted:** 24 November, 2016; originally announced November 2016
+**Comments:** 4 pages, 4 figures
+**Journal:** J. Phys.: Conf. Ser. 574, 012149 (2015)
+**DOI:** 10.1088/1742-6596/574/1/012149
+**Formats:** [pdf, ps, other]
+
+---
+
+**25. arXiv:1603.03608 [cs.CE, q-bio.PE]**
+**Title:** Bragg-Williams Approximation for the Dynamics of Prey-Predator Biological Associations
+**Authors:** E. M. De la Calleja, J. L. Carrillo, I. Santamaría-Holek
+**Abstract:** We apply the Bragg-Williams approximation, analogous to the Weiss solution for the Ising model, to study prey-predator dynamics with long-range time correlations.
+**Submitted:** 28 April, 2016; v1 submitted 11 March, 2016; originally announced March 2016
+**Formats:** [pdf, ps, other]
+
+---
+
+**26. arXiv:1507.02310 [q-fin.GN]**
+**Title:** Quantum Gates and Quantum Circuits of Stock Portfolio
+**Author:** Ovidiu Racorean
+**Abstract:** We model stock portfolio price time series as braids simulating quantum gates in the Ising anyons quantum computational model, constructing 1-qubit quantum gates.
+**Submitted:** 10 July, 2015; v1 submitted 27 June, 2015; originally announced July 2015
+**Comments:** 41 pages
+**Formats:** [pdf]
+
+---
+
+**27. arXiv:1410.3015 [cond-mat.stat-mech, cs.CE]**
+**Title:** Heuristic Monte Carlo Method Applied to Cooperative Motion Algorithm for Binary Lattice Fluid
+**Authors:** Piotr Knychala, Michal Banaszak
+**Abstract:** We apply a heuristic Monte Carlo method to a binary lattice fluid, matching the critical temperature of the Ising model on a 2D triangular lattice using parallel tempering.
+**Submitted:** 11 October, 2014; originally announced October 2014
+**Comments:** Accepted in Journal of Computational Methods in Sciences and Engineering
+**Formats:** [pdf, other]
+
+---
+
+**28. arXiv:1404.0243 [q-fin.GN, physics.soc-ph]**
+**Title:** Physics and Financial Economics (1776-2014): Puzzles, Ising, and Agent-Based Models
+**Author:** D. Sornette
+**Abstract:** We review the role of the Ising model in financial economics, addressing volatility smile and excess volatility puzzles, and introduce random utilities and logit models as analogs to the Boltzmann factor.
+**Submitted:** 1 April, 2014; originally announced April 2014
+**Comments:** 76 pages, in press in Reports on Progress in Physics (2014)
+**Journal:** Rep. Prog. Phys. 77, 062001 (2014)
+**DOI:** 10.1088/0034-4885/77/6/062001
+**Formats:** [pdf, ps, other]
+
+---
+
+**29. arXiv:1403.6767 [physics.soc-ph, cond-mat.stat-mech, nlin.AO]**
+**Title:** Complex Networks Analysis in Socioeconomic Models
+**Authors:** Luis M. Varela, Giulia Rotundo, Marcel Ausloos, Jesus Carrete
+**Abstract:** We describe the statistical mechanics of the Ising model on complex networks (Watts-Strogatz and Albert-Barabasi) for socioeconomic systems with interacting agents.
+**Submitted:** 1 April, 2014; v1 submitted 26 March, 2014; originally announced March 2014
+**Journal:** Complexity and Geographical Economics, pp. 209–245 (Springer, 2015)
+**Formats:** [pdf, ps, other]
+
+---
+
+**30. arXiv:1401.2000 [cs.CE, cond-mat.stat-mech, physics.comp-ph]**
+**Title:** A Model Project for Reproducible Papers: Critical Temperature for the Ising Model on a Square Lattice
+**Authors:** M. Dolfi, J. Gukelberger, A. Hehn, J. Imriška, K. Pakrouski, T. F. Rønnow, M. Troyer, I. Zintchenko, F. Chirigati, J. Freire, D. Shasha
+**Abstract:** We estimate the critical temperature of the Ising model on a square lattice (Tc/J = 2.26934(6)) using finite-size scaling of Binder cumulants, providing a reproducible paper example with a virtual machine.
+**Submitted:** 9 January, 2014; originally announced January 2014
+**Comments:** Authors listed alphabetically by institution and name. 5 pages, 4 figures
+**Formats:** [pdf, other]
+
+---
+
+**31. arXiv:1311.3871 [q-fin.ST, cond-mat.dis-nn, physics.soc-ph]**
+**Title:** Financial Interaction Networks Inferred from Traded Volumes
+**Authors:** Hongli Zeng, Rémi Lemoy, Mikko Alava
+**Abstract:** We transform financial data into binary strings via local averaging and thresholding, applying Ising model inference techniques to characterize system behavior.
+**Submitted:** 15 November, 2013; originally announced November 2013
+**Comments:** 14 pages, 6 figures
+**Journal:** J. Stat. Mech. 2014, P07008
+**DOI:** 10.1088/1742-5468/2014/07/P07008
+**Formats:** [pdf, other]
+
+---
+
+**32. arXiv:1311.2511 [q-fin.PM, physics.data-an]**
+**Title:** Spin Glasses and Nonlinear Constraints in Portfolio Optimization
+**Author:** M. Andrecut
+**Abstract:** We model portfolio optimization with nonlinear constraints as a random Ising model with constant magnetization norm, reducing to an eigenproblem with 2N solutions.
+**Submitted:** 11 November, 2013; originally announced November 2013
+**Comments:** 10 pages, 4 figures
+**Journal:** Phys. Lett. A 2013
+**DOI:** 10.1016/j.physleta.2013.12.013
+**Formats:** [pdf, ps, other]
+
+---
+
+**33. arXiv:1309.5030 [q-fin.TR]**
+**Title:** Characterizing Financial Crisis by Means of the Three States Random Field Ising Model
+**Authors:** Mitsuaki Murota, Jun-ichi Inoue
+**Abstract:** We propose a three-state random field Ising model to predict stock price drops during economic crises, explaining macroscopic phenomena from microscopic trader behavior.
+**Submitted:** 19 September, 2013; originally announced September 2013
+**Comments:** 16 pages, 14 figures, using svmult.cls
+**Journal:** Econophysics of Agent-Based Models, pp. 83–98 (Springer, 2013)
+**Formats:** [pdf, ps, other]
+
+---
+
+**34. arXiv:1309.1871 [q-fin.ST]**
+**Title:** Statistical Inference of Co-Movements of Stocks During a Financial Crisis
+**Authors:** Takero Ibuki, Shunsuke Higano, Sei Suzuki, Jun-ichi Inoue, Anirban Chakraborti
+**Abstract:** We propose a multi-layered Ising model with random fields to predict stock time series during crises, minimizing cumulative error.
+**Submitted:** 7 September, 2013; originally announced September 2013
+**Comments:** 16 pages, 6 figures. Proceedings of Inference, Computation, and Spin Glasses, Sapporo, Japan, July 2013
+**Journal:** J. Phys.: Conf. Ser. 473, 012008 (2013)
+**DOI:** 10.1088/1742-6596/473/1/012008
+**Formats:** [pdf, ps, other]
+
+---
+
+**35. arXiv:1307.2789 [cs.CE, cond-mat.mes-hall]**
+**Title:** Computer Simulation of 3-D Finite-Volume Liquid Transport in Fibrous Materials: A Physical Model for Ink Seepage into Paper
+**Authors:** Reza Farrahi Moghaddam, Fereydoun Farrahi Moghaddam, Mohamed Cheriet
+**Abstract:** We develop a modified Ising model to simulate ink seepage into paper at the mesoscopic scale, considering finite-volume ink and dynamic seepage.
+**Submitted:** 10 July, 2013; originally announced July 2013
+**Comments:** 26 pages, 12 figures
+**Formats:** [pdf, other]
+
+---
+
+**36. arXiv:1209.1321 [q-fin.GN, cond-mat.stat-mech, physics.soc-ph]**
+**Title:** Entanglement Between Demand and Supply in Markets with Bandwagon Goods
+**Authors:** Mirta B. Gordon, Jean-Pierre Nadal, Denis Phan, Viktoriya Semeshenko
+**Abstract:** We analyze demand-supply entanglement in markets for bandwagon goods using a Random Field Ising Model, identifying a critical price for high demand.
+**Submitted:** 19 December, 2012; v1 submitted 6 September, 2012; originally announced September 2012
+**Comments:** Accepted in Journal of Statistical Physics, online Dec 2012
+**Journal:** J. Stat. Phys. 2012
+**DOI:** 10.1007/s10955-012-0660-1
+**Formats:** [pdf, other]
+
+---
+
+**37. arXiv:1209.0453 [cond-mat.stat-mech, physics.soc-ph, q-fin.GN]**
+**Title:** Crises and Collective Socio-Economic Phenomena: Simple Models and Challenges
+**Author:** Jean-Philippe Bouchaud
+**Abstract:** We review the Random Field Ising Model as a framework for modeling sudden ruptures and crises in socio-economic systems.
+**Submitted:** 29 December, 2012; v1 submitted 2 September, 2012; originally announced September 2012
+**Comments:** Review paper accepted for J. Stat. Phys. special issue; minor improvements per reviewers
+**Journal:** J. Stat. Phys. 2012
+**DOI:** 10.1007/s10955-012-0687-3
+**Formats:** [pdf, ps, other]
+
+---
+
+**38. arXiv:1206.7000 [physics.soc-ph, q-fin.ST]**
+**Title:** On the Role of Backauditing for Tax Evasion in an Agent-Based Econophysics Model
+**Authors:** G. Seibold, M. Pickhardt
+**Abstract:** We investigate tax evasion dynamics in an inhomogeneous Ising model, analyzing the impact of backauditing and endogenously determined penalty rates.
+**Submitted:** 29 June, 2012; originally announced June 2012
+**Comments:** 7 pages, 9 figures
+**Journal:** Physica A 2013
+**DOI:** 10.1016/j.physa.2013.01.016
+**Formats:** [pdf, ps, other]
+
+---
+
+**39. arXiv:1206.4420 [q-fin.ST, cond-mat.stat-mech]**
+**Title:** Statistical Pairwise Interaction Model of Stock Market
+**Author:** Thomas Bury
+**Abstract:** We model stock market interactions as an Ising model on a complex network, with interaction strengths scaling inversely with system size.
+**Submitted:** 27 January, 2014; v1 submitted 20 June, 2012; originally announced June 2012
+**Comments:** 11 pages, 8 figures
+**Journal:** Eur. Phys. J. B 86, 89 (2013)
+**DOI:** 10.1140/epjb/e2013-30598-1
+**Formats:** [pdf, ps, other]
+
+---
+
+**40. arXiv:1112.0233 [physics.soc-ph, q-fin.ST]**
+**Title:** Income Tax Evasion Dynamics: Evidence from an Agent-Based Econophysics Model
+**Authors:** Michael Pickhardt, Goetz Seibold
+**Abstract:** We analyze tax evasion dynamics using an inhomogeneous multi-dimensional Ising model, incorporating agent-based econophysics.
+**Submitted:** 1 December, 2011; originally announced December 2011
+**Comments:** 24 pages, 8 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**41. arXiv:1103.5345 [q-fin.PR, cond-mat.stat-mech, physics.soc-ph]**
+**Title:** Spin Models as Microfoundation of Macroscopic Financial Market Models
+**Authors:** Sebastian M. Krause, Stefan Bornholdt
+**Abstract:** We derive a macroscopic Langevin equation from a microscopic Ising spin market model, aiding understanding and agent-based model construction.
+**Submitted:** 28 March, 2011; originally announced March 2011
+**Comments:** 4 pages, 4 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**42. arXiv:1011.3834 [physics.soc-ph, cs.SI, q-fin.TR]**
+**Title:** Ising-Like Agent-Based Technology Diffusion Model: Adoption Patterns vs. Seeding Strategies
+**Authors:** Carlos E. Laciana, Santiago L. Rovere
+**Abstract:** We adapt the Ising model to simulate technology adoption, combining individual perception of innovation advantages with social influence.
+**Submitted:** 2 January, 2013; v1 submitted 16 November, 2010; originally announced November 2010
+**Comments:** 23 pages, 5 figures
+**Journal:** Physica A 390, 1139 (2011)
+**DOI:** 10.1016/j.physa.2010.11.006
+**Formats:** [pdf]
+
+---
+
+**43. arXiv:1008.2226 [q-fin.CP, math.PR, q-fin.PR]**
+**Title:** Non-Existence of Markovian Time Dynamics for Graphical Models of Correlated Default
+**Authors:** Steven N. Evans, Alexandru Hening
+**Abstract:** We model correlated defaults using an Ising model, showing non-existence of Markovian time dynamics for graphical models.
+**Submitted:** 12 August, 2010; originally announced August 2010
+**Comments:** 18 pages
+**MSC Class:** 60K35 (Primary), 91G40, 91B80 (Secondary)
+**Formats:** [pdf, ps, other]
+
+---
+
+**44. arXiv:0806.4876 [q-fin.ST, physics.data-an]**
+**Title:** Inconsistency of the Judgment Matrix in the AHP Method and the Decision Maker's Knowledge
+**Authors:** Anna Szczypinska, Edward W. Piotrowski
+**Abstract:** We apply the Ising model and thermodynamics to estimate decision maker professionalism in the AHP method, modeling transaction costs in financial markets.
+**Submitted:** 24 November, 2008; v1 submitted 30 June, 2008; originally announced June 2008
+**Comments:** 17 pages
+**Journal:** Physica A 2008
+**DOI:** 10.1016/j.physa.2008.11.034
+**Formats:** [pdf, ps, other]
+
+---
+
+**45. arXiv:0803.0436 [q-fin.ST, physics.data-an, physics.soc-ph]**
+**Title:** Double Power Law Decay of the Persistence in Financial Markets
+**Authors:** S. Jain, T. Yamano
+**Abstract:** We map Nikkei Index share values (2002) onto Ising spins, finding double power law decay in persistence of shares above/below starting values.
+**Submitted:** 4 March, 2008; originally announced March 2008
+**Comments:** 9 pages, 2 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**46. arXiv:0801.2980 [q-fin.GN, physics.soc-ph]**
+**Title:** Analysing Tax Evasion Dynamics via the Ising Model
+**Authors:** Georg Zaklan, Frank Westerhoff, Dietrich Stauffer
+**Abstract:** We model tax evasion using the Ising model, incorporating audits and temporary honest behavior, simulating compliance across parameter combinations.
+**Submitted:** 18 January, 2008; originally announced January 2008
+**Comments:** 15 pages, including figures and Fortran program
+**Formats:** [pdf, other]
+
+---
+
+**47. arXiv:0711.3106 [q-fin.ST, physics.soc-ph]**
+**Title:** A Threshold Model of Financial Markets
+**Authors:** Paweł Sieczka, Janusz A. Hołyst
+**Abstract:** We propose an Ising-based model of market agents with buy, sell, or inactive actions, reproducing fat-tailed returns and volatility clustering.
+**Submitted:** 24 June, 2008; v1 submitted 20 November, 2007; originally announced November 2007
+**Journal:** Acta Phys. Pol. A 114(3), 458–648 (2008)
+**Formats:** [pdf, ps, other]
+
+---
+
+**48. arXiv:0709.1092 [q-fin.GN, cond-mat.dis-nn, physics.comp-ph, physics.soc-ph, q-fin.ST]**
+**Title:** Persistence in a Random Bond Ising Model of Socio-Econo Dynamics
+**Authors:** S. Jain, T. Yamano
+**Abstract:** We study persistence in a socio-economic Random Bond Ising model on hypercubic lattices (up to 5D) at finite temperature, with binary bond interactions.
+**Submitted:** 17 September, 2007; v1 submitted 7 September, 2007; originally announced September 2007
+**Comments:** 11 pages, 4 figures
+**Journal:** Int. J. Mod. Phys. C 2008
+**DOI:** 10.1142/S012918310801198X
+**Formats:** [pdf, ps, other]
+
+---
+
+**49. arXiv:physics/0610160 [physics.soc-ph, physics.comp-ph, q-fin.GN]**
+**Title:** Persistence in Random Bond Ising Models of a Socio-Econo Dynamics in High Dimensions
+**Authors:** S. Jain, T. Yamano
+**Abstract:** We simulate persistence in a socio-economic Random Bond Ising model on hypercubic lattices (up to 5D) with a social local field and binary bond interactions.
+**Submitted:** 20 October, 2006; originally announced October 2006
+**Comments:** 9 pages, 4 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**50. arXiv:physics/0609093 [physics.soc-ph, q-fin.ST]**
+**Title:** Correlation Structures of Correlated Binomial Models and Implied Default Distribution
+**Authors:** S. Mori, K. Kitsukawa, M. Hisakado
+**Abstract:** We compare implied default distributions for iTraxx-CJ tranches using Gaussian copula, Beta binomial, and long-range Ising models, highlighting correlation structure differences.
+**Submitted:** 18 September, 2008; v1 submitted 12 September, 2006; originally announced September 2006
+**Comments:** 16 pages, 7 figures
+**Journal:** J. Phys. Soc. Jpn. 77, 114802 (2008)
+**DOI:** 10.1143/JPSJ.77.114802
+**Formats:** [pdf, ps, other]
+
+---
+
+**51. arXiv:physics/0603040 [physics.soc-ph, q-fin.ST]**
+**Title:** Evaluation of Tranche in Securitization and Long-Range Ising Model
+**Authors:** K. Kitsukawa, S. Mori, M. Hisakado
+**Abstract:** We model homogeneous credit portfolios using a long-range Ising model, developing a perturbation-based evaluation for securitization tranches.
+**Submitted:** 12 September, 2006; v1 submitted 6 March, 2006; originally announced March 2006
+**Comments:** 21 pages, 9 figures
+**Journal:** Physica A 368, 191–206 (2006)
+**DOI:** 10.1016/j.physa.2005.12.057
+**Formats:** [pdf, ps, other]
+
+---
+
+**52. arXiv:physics/0601047 [physics.data-an, physics.soc-ph, q-fin.ST]**
+**Title:** Non-Poisson Intermittent Events in Price Formation
+**Authors:** Antonella Greco, Luca Sorriso-Valvo, Vincenzo Carbone
+**Abstract:** We model price formation as an Ising spin chain with three trading figures, showing clustering and declustering via local Poisson hypothesis testing.
+**Submitted:** 9 January, 2006; originally announced January 2006
+**Comments:** 4 pages
+**Formats:** [pdf, ps, other]
+
+---
+
+**53. arXiv:physics/0510028 [physics.soc-ph, q-fin.ST]**
+**Title:** Financial Markets and Persistence
+**Authors:** S. Jain, P. Buckley
+**Abstract:** We map FTSE 100 share values onto Ising spins, finding power law decay in the proportion of shares remaining above/below starting values.
+**Submitted:** 8 January, 2006; v1 submitted 4 October, 2005; originally announced October 2005
+**Comments:** 9 pages, 3 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**54. arXiv:math/0509575 [math.PR, cs.CE, cs.DS, math.CA, math.CO, math.ST, q-bio.PE]**
+**Title:** Evolutionary Trees and the Ising Model on the Bethe Lattice: A Proof of Steel's Conjecture
+**Authors:** Constantinos Daskalakis, Elchanan Mossel, Sebastien Roch
+**Abstract:** We prove Steel’s conjecture for the CFN/Ising evolutionary model, showing tree recovery from sequences of length O(log n) when mutation probability is below the critical threshold.
+**Submitted:** 27 July, 2009; v1 submitted 23 September, 2005; originally announced September 2005
+**Comments:** Second major revision, updated proofs and statements
+**Formats:** [pdf, other]
+
+---
+
+**55. arXiv:nlin/0506015 [nlin.AO, q-fin.TR]**
+**Title:** On Some Processes and Distributions in a Collective Model of Investors' Behavior
+**Authors:** Kyrylo Shmatov, Mikhail Smirnov
+**Abstract:** We model investor behavior using a discrete Markov chain similar to the Ising model, with bullish or bearish opinions yielding Gaussian or bimodal distributions.
+**Submitted:** 7 June, 2005; originally announced June 2005
+**Comments:** 15 pages, 23 figures
+**Formats:** [pdf]
+
+---
+
+**56. arXiv:physics/0503230 [physics.soc-ph, cond-mat.stat-mech, q-fin.ST]**
+**Title:** Self-Fulfilling Ising Model of Financial Markets
+**Authors:** Wei-Xing Zhou, Didier Sornette
+**Abstract:** We study a dynamical Ising model where agents’ opinions (buy/sell) evolve based on past news and market returns, testing rational agent hypotheses.
+**Submitted:** 31 March, 2005; originally announced March 2005
+**Comments:** 4 pages, 3 figures
+**Journal:** Eur. Phys. J. B 55(2), 175–181 (2007)
+**DOI:** 10.1140/epjb/e2006-00391-6
+**Formats:** [pdf, ps, other]
+
+---
+
+**57. arXiv:cond-mat/0503607 [cond-mat.stat-mech, physics.soc-ph, q-fin.ST]**
+**Title:** Importance of Positive Feedbacks and Over-Confidence in a Self-Fulfilling Ising Model of Financial Markets
+**Authors:** Didier Sornette, Wei-Xing Zhou
+**Abstract:** We model financial price dynamics using an Ising model with imitation, external news, and private information, emphasizing positive feedback and over-confidence.
+**Submitted:** 29 March, 2005; v1 submitted 24 March, 2005; originally announced March 2005
+**Comments:** 44 pages, 15 figures
+**Journal:** Physica A 370, 704–726 (2006)
+**DOI:** 10.1016/j.physa.2006.02.022
+**Formats:** [pdf, ps, other]
+
+---
+
+**58. arXiv:cond-mat/0402511 [cond-mat.stat-mech, q-fin.ST]**
+**Title:** Critical Ising Model and Financial Market
+**Author:** Takeshi Inagaki
+**Abstract:** We model stock price dynamics using a near-2D Ising model, with time and stock ensemble dimensions, where investor response strength corresponds to inverse temperature.
+**Submitted:** 21 February, 2004; v1 submitted 20 February, 2004; originally announced February 2004
+**Comments:** 5 pages, no figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**59. arXiv:cond-mat/0401378 [cond-mat.other, cond-mat.stat-mech, q-fin.RM]**
+**Title:** Long-Range Ising Model for Credit Risk Modeling in Homogeneous Portfolios
+**Authors:** Jordi Molins, Eduard Vives
+**Abstract:** We use a finite-size long-range Ising model within the maximum entropy principle to model credit risk in homogeneous portfolios with default correlations.
+**Submitted:** 21 January, 2004; originally announced January 2004
+**Comments:** 4 pages, 3 figures
+**Formats:** [pdf, ps, other]
+
+---
+
+**60. arXiv:cond-mat/0311096 [cond-mat.dis-nn, q-fin.GN]**
+**Title:** Monopoly Market with Externality: An Analysis with Statistical Physics and Agent-Based Computational Economics
+**Authors:** Jean-Pierre Nadal, Denis Phan, Mirta B. Gordon, Jean Vannimenus
+**Abstract:** We model monopoly markets with externalities using Ising and Random Field Ising models, representing annealed and quenched disorder in decision rules.
+**Submitted:** 5 November, 2003; originally announced November 2003
+**Comments:** 20 pages, 5 figures. Presented at WEHIA 2003, Kiel
+**Report:** Les cahiers du laboratoire Leibniz, n. 86, June 2003
+**Formats:** [pdf, ps, other]
+
+---
+
+**61. arXiv:cond-mat/0211058 [cond-mat.stat-mech, q-fin.GN]**
+**Title:** How Effective is Advertising in Duopoly Markets?
+**Authors:** K. Sznajd-Weron, R. Weron
+**Abstract:** We propose an Ising spin model for advertising in duopoly markets, where influence spreads outward from the center to neighbors, modeling opinion spread among customers.
+**Submitted:** 6 December, 2002; v1 submitted 4 November, 2002; originally announced November 2002
+**Comments:** 7 pages, 6 figures; v2: cosmetic changes
+**Journal:** Physica A 2002
+**DOI:** 10.1016/S0378-4371(02)01904-0
+**Formats:** [pdf, ps, other]
+
+---
+
+**62. arXiv:cond-mat/0110201 [cond-mat.stat-mech, q-fin.GN, q-fin.ST]**
+**Title:** Stability of Money: Phase Transitions in an Ising Economy
+**Authors:** Stefan Bornholdt, Friedrich Wagner
+**Abstract:** We model money value as a dynamical variable in an Ising economy on a Cayley tree, observing phase transitions between single and multiple state phases.
+**Submitted:** 10 October, 2001; originally announced October 2001
+**Comments:** 9 pages, 5 figures
+**Report:** CAU-THP-01-21
+**Journal:** Physica A 316, 453–468 (2002)
+**DOI:** 10.1016/S0378-4371(02)01218-9
+**Formats:** [pdf, ps, other]
+
+---
+
+**63. arXiv:cond-mat/0101001 [cond-mat.stat-mech, q-fin.ST]**
+**Title:** A Simple Model of Price Formation
+**Authors:** K. Sznajd-Weron, R. Weron
+**Abstract:** We propose an Ising spin model for price formation, where influence spreads outward from the center to neighbors, modeling trader opinion dynamics.
+**Submitted:** 7 November, 2001; v1 submitted 30 December, 2000; originally announced January 2001
+**Comments:** 4 pages, 4 figures; added stringent statistical analysis
+**Journal:** Int. J. Mod. Phys. C 13(1), 115–123 (2002)
+**DOI:** 10.1142/S0129183102003000
+**Formats:** [pdf, ps, other]
+
+---
+
+**64. arXiv:cond-mat/0010263 [cond-mat.stat-mech, q-fin.GN]**
+**Title:** Speculative Bubbles and Crashes in Stock Market: An Interacting-Agent Model of Speculative Activity
+**Author:** Taisei Kaizoji
+**Abstract:** We model stock market bubbles and crashes using an infinite-range Ising model, capturing trader influence and speculative activity.
+**Submitted:** 18 October, 2000; originally announced October 2000
+**Comments:** 11 pages, 6 figures
+**Journal:** Physica A 287(3–4), 493–506 (2000)
+**DOI:** 10.1016/S0378-4371(00)00388-5
+**Formats:** [pdf, ps, other]
+
+---
+
+**65. arXiv:cond-mat/0004001 [cond-mat.stat-mech, q-fin.ST, q-fin.TR]**
+**Title:** Stock Market Speculation: Spontaneous Symmetry Breaking of Economic Valuation
+**Author:** D. Sornette
+**Abstract:** We model stock market speculation as spontaneous symmetry-breaking in an Ising model, leading to spontaneous valuation without earnings, akin to magnetization.
+**Submitted:** 2 April, 2000; originally announced April 2000
+**Comments:** 23 pages, 10 figures
+**Journal:** Physica A 284(1–4), 355–375 (2000)
+**DOI:** 10.1016/S0378-4371(00)00261-2
+**Formats:** [pdf, ps, other]
+
+---
+
+**66. arXiv:cond-mat/0001353 [cond-mat.stat-mech, q-fin.GN]**
+**Title:** "Thermometers" of Speculative Frenzy
+**Authors:** B. M. Roehner, D. Sornette
+**Abstract:** We model speculative bubbles using an Ising model on a random graph, with indicators as “thermometers” measuring the balance between idiosyncratic information and imitation.
+**Submitted:** 24 January, 2000; originally announced January 2000
+**Comments:** 15 pages, 10 figures
+**Journal:** Eur. Phys. J. B 16, 729–739 (2000)
+**DOI:** 10.1007/s100510070190
+**Formats:** [pdf, ps, other]
+
+---
+
+This output organizes each entry with a consistent format, including arXiv ID, categories, title, authors, abstract (truncated where necessary), submission details, comments, journal references, DOIs, and available formats. Let me know if you need further refinements or additional processing!
