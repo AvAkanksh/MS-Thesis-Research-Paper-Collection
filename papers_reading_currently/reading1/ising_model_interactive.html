@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Ising Model Simulator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .controls {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .control-group {
+            margin-bottom: 25px;
+        }
+
+        .control-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .slider-container {
+            position: relative;
+            margin-bottom: 10px;
+        }
+
+        input[type="range"] {
+            width: 100%;
+            height: 6px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.3);
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: #4CAF50;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .value-display {
+            text-align: center;
+            font-weight: bold;
+            color: #4CAF50;
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .start-btn {
+            background: linear-gradient(45deg, #4CAF50, #45a049);
+            color: white;
+        }
+
+        .stop-btn {
+            background: linear-gradient(45deg, #f44336, #da190b);
+            color: white;
+        }
+
+        .reset-btn {
+            background: linear-gradient(45deg, #2196F3, #0b7dda);
+            color: white;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .visualization {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+        }
+
+        .canvas-container {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            text-align: center;
+        }
+
+        .canvas-container h3 {
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        canvas {
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            background: white;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .stats {
+            grid-column: 1 / -1;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #4CAF50;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .info {
+            margin-top: 20px;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        @media (max-width: 1200px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .visualization {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧲 Interactive Ising Model Simulator</h1>
+        
+        <div class="main-content">
+            <div class="controls">
+                <div class="control-group">
+                    <label for="temperature">Temperature (T)</label>
+                    <div class="slider-container">
+                        <input type="range" id="temperature" min="0.1" max="5" step="0.1" value="2.0">
+                    </div>
+                    <div class="value-display" id="tempValue">2.0</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="coupling">Coupling Constant (J)</label>
+                    <div class="slider-container">
+                        <input type="range" id="coupling" min="0.1" max="3" step="0.1" value="1.0">
+                    </div>
+                    <div class="value-display" id="couplingValue">1.0</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="gridSize">Grid Size</label>
+                    <div class="slider-container">
+                        <input type="range" id="gridSize" min="20" max="80" step="5" value="50">
+                    </div>
+                    <div class="value-display" id="gridSizeValue">50 × 50</div>
+                </div>
+
+                <div class="control-group">
+                    <label for="speed">Animation Speed</label>
+                    <div class="slider-container">
+                        <input type="range" id="speed" min="1" max="10" step="1" value="5">
+                    </div>
+                    <div class="value-display" id="speedValue">5</div>
+                </div>
+
+                <div class="button-group">
+                    <button class="start-btn" id="startBtn">Start</button>
+                    <button class="stop-btn" id="stopBtn" disabled>Stop</button>
+                </div>
+                
+                <div class="button-group">
+                    <button class="reset-btn" id="resetBtn">Reset</button>
+                </div>
+
+                <div class="info">
+                    <strong>Critical Temperature:</strong> T ≈ 2.27<br>
+                    <strong>Below Tc:</strong> Ferromagnetic ordering<br>
+                    <strong>Above Tc:</strong> Paramagnetic phase<br>
+                    <strong>At Tc:</strong> Phase transition
+                </div>
+            </div>
+
+            <div class="visualization">
+                <div class="canvas-container">
+                    <h3>Spin Configuration</h3>
+                    <canvas id="spinCanvas" width="400" height="400"></canvas>
+                </div>
+
+                <div class="canvas-container">
+                    <h3>Energy Evolution</h3>
+                    <canvas id="energyCanvas" width="400" height="300"></canvas>
+                </div>
+
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-value" id="currentStep">0</span>
+                        <span class="stat-label">Monte Carlo Steps</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="magnetization">0</span>
+                        <span class="stat-label">Magnetization</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="energy">0</span>
+                        <span class="stat-label">Total Energy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value" id="avgMagnetization">0</span>
+                        <span class="stat-label">Avg Magnetization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        class IsingModel {
+            constructor(size, temperature, coupling) {
+                this.size = size;
+                this.T = temperature;
+                this.J = coupling;
+                this.beta = 1.0 / temperature;
+                this.spins = this.initializeSpins();
+                this.step = 0;
+                this.energyHistory = [];
+                this.magnetizationHistory = [];
+                this.maxHistoryLength = 200;
+            }
+
+            initializeSpins() {
+                const spins = new Array(this.size);
+                for (let i = 0; i < this.size; i++) {
+                    spins[i] = new Array(this.size);
+                    for (let j = 0; j < this.size; j++) {
+                        spins[i][j] = Math.random() < 0.5 ? -1 : 1;
+                    }
+                }
+                return spins;
+            }
+
+            getEnergy(i, j) {
+                const neighbors = [
+                    this.spins[(i - 1 + this.size) % this.size][j],
+                    this.spins[(i + 1) % this.size][j],
+                    this.spins[i][(j - 1 + this.size) % this.size],
+                    this.spins[i][(j + 1) % this.size]
+                ];
+                return -this.J * this.spins[i][j] * neighbors.reduce((sum, spin) => sum + spin, 0);
+            }
+
+            totalEnergy() {
+                let energy = 0;
+                for (let i = 0; i < this.size; i++) {
+                    for (let j = 0; j < this.size; j++) {
+                        energy += this.getEnergy(i, j);
+                    }
+                }
+                return energy / 2;
+            }
+
+            magnetization() {
+                let mag = 0;
+                for (let i = 0; i < this.size; i++) {
+                    for (let j = 0; j < this.size; j++) {
+                        mag += this.spins[i][j];
+                    }
+                }
+                return mag;
+            }
+
+            monteCarloStep() {
+                for (let n = 0; n < this.size * this.size; n++) {
+                    const i = Math.floor(Math.random() * this.size);
+                    const j = Math.floor(Math.random() * this.size);
+
+                    const currentEnergy = this.getEnergy(i, j);
+                    this.spins[i][j] *= -1;
+                    const newEnergy = this.getEnergy(i, j);
+
+                    const deltaE = newEnergy - currentEnergy;
+
+                    if (deltaE > 0 && Math.random() >= Math.exp(-this.beta * deltaE)) {
+                        this.spins[i][j] *= -1; // Reject the flip
+                    }
+                }
+                this.step++;
+
+                // Update history
+                const currentMag = this.magnetization();
+                const currentEnergy = this.totalEnergy();
+                
+                this.magnetizationHistory.push(currentMag);
+                this.energyHistory.push(currentEnergy);
+
+                if (this.magnetizationHistory.length > this.maxHistoryLength) {
+                    this.magnetizationHistory.shift();
+                    this.energyHistory.shift();
+                }
+            }
+
+            updateParameters(temperature, coupling) {
+                this.T = temperature;
+                this.J = coupling;
+                this.beta = 1.0 / temperature;
+            }
+
+            reset(newSize = null) {
+                if (newSize && newSize !== this.size) {
+                    this.size = newSize;
+                }
+                this.spins = this.initializeSpins();
+                this.step = 0;
+                this.energyHistory = [];
+                this.magnetizationHistory = [];
+            }
+        }
+
+        class Visualizer {
+            constructor() {
+                this.spinCanvas = document.getElementById('spinCanvas');
+                this.energyCanvas = document.getElementById('energyCanvas');
+                this.spinCtx = this.spinCanvas.getContext('2d');
+                this.energyCtx = this.energyCanvas.getContext('2d');
+                
+                this.model = null;
+                this.animationId = null;
+                this.isRunning = false;
+                this.speed = 5;
+
+                this.setupEventListeners();
+                this.initializeModel();
+            }
+
+            setupEventListeners() {
+                const tempSlider = document.getElementById('temperature');
+                const couplingSlider = document.getElementById('coupling');
+                const gridSizeSlider = document.getElementById('gridSize');
+                const speedSlider = document.getElementById('speed');
+
+                tempSlider.addEventListener('input', (e) => {
+                    const value = parseFloat(e.target.value);
+                    document.getElementById('tempValue').textContent = value.toFixed(1);
+                    if (this.model) {
+                        this.model.updateParameters(value, this.model.J);
+                    }
+                });
+
+                couplingSlider.addEventListener('input', (e) => {
+                    const value = parseFloat(e.target.value);
+                    document.getElementById('couplingValue').textContent = value.toFixed(1);
+                    if (this.model) {
+                        this.model.updateParameters(this.model.T, value);
+                    }
+                });
+
+                gridSizeSlider.addEventListener('input', (e) => {
+                    const value = parseInt(e.target.value);
+                    document.getElementById('gridSizeValue').textContent = `${value} × ${value}`;
+                });
+
+                speedSlider.addEventListener('input', (e) => {
+                    this.speed = parseInt(e.target.value);
+                    document.getElementById('speedValue').textContent = this.speed;
+                });
+
+                document.getElementById('startBtn').addEventListener('click', () => this.start());
+                document.getElementById('stopBtn').addEventListener('click', () => this.stop());
+                document.getElementById('resetBtn').addEventListener('click', () => this.reset());
+            }
+
+            initializeModel() {
+                const temp = parseFloat(document.getElementById('temperature').value);
+                const coupling = parseFloat(document.getElementById('coupling').value);
+                const size = parseInt(document.getElementById('gridSize').value);
+
+                this.model = new IsingModel(size, temp, coupling);
+                this.drawSpins();
+                this.drawEnergyGraph();
+                this.updateStats();
+            }
+
+            start() {
+                if (!this.isRunning) {
+                    this.isRunning = true;
+                    document.getElementById('startBtn').disabled = true;
+                    document.getElementById('stopBtn').disabled = false;
+                    document.getElementById('gridSize').disabled = true;
+                    this.animate();
+                }
+            }
+
+            stop() {
+                if (this.isRunning) {
+                    this.isRunning = false;
+                    document.getElementById('startBtn').disabled = false;
+                    document.getElementById('stopBtn').disabled = true;
+                    document.getElementById('gridSize').disabled = false;
+                    if (this.animationId) {
+                        cancelAnimationFrame(this.animationId);
+                    }
+                }
+            }
+
+            reset() {
+                this.stop();
+                const newSize = parseInt(document.getElementById('gridSize').value);
+                this.model.reset(newSize);
+                this.drawSpins();
+                this.drawEnergyGraph();
+                this.updateStats();
+            }
+
+            animate() {
+                if (!this.isRunning) return;
+
+                for (let i = 0; i < this.speed; i++) {
+                    this.model.monteCarloStep();
+                }
+
+                this.drawSpins();
+                this.drawEnergyGraph();
+                this.updateStats();
+
+                this.animationId = requestAnimationFrame(() => this.animate());
+            }
+
+            drawSpins() {
+                const canvas = this.spinCanvas;
+                const ctx = this.spinCtx;
+                const size = this.model.size;
+                const cellSize = Math.min(canvas.width, canvas.height) / size;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                for (let i = 0; i < size; i++) {
+                    for (let j = 0; j < size; j++) {
+                        const x = j * cellSize;
+                        const y = i * cellSize;
+                        
+                        ctx.fillStyle = this.model.spins[i][j] === 1 ? '#e74c3c' : '#3498db';
+                        ctx.fillRect(x, y, cellSize, cellSize);
+                    }
+                }
+            }
+
+            drawEnergyGraph() {
+                const canvas = this.energyCanvas;
+                const ctx = this.energyCtx;
+                const history = this.model.energyHistory;
+
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Draw background grid
+                ctx.strokeStyle = '#ecf0f1';
+                ctx.lineWidth = 1;
+                for (let i = 0; i <= 10; i++) {
+                    const y = (canvas.height / 10) * i;
+                    ctx.beginPath();
+                    ctx.moveTo(0, y);
+                    ctx.lineTo(canvas.width, y);
+                    ctx.stroke();
+                }
+
+                if (history.length < 2) return;
+
+                // Find min and max for scaling
+                const minEnergy = Math.min(...history);
+                const maxEnergy = Math.max(...history);
+                const range = maxEnergy - minEnergy || 1;
+
+                // Draw energy line
+                ctx.strokeStyle = '#e74c3c';
+                ctx.lineWidth = 2;
+                ctx.beginPath();
+
+                for (let i = 0; i < history.length; i++) {
+                    const x = (canvas.width / (history.length - 1)) * i;
+                    const y = canvas.height - ((history[i] - minEnergy) / range) * canvas.height;
+                    
+                    if (i === 0) {
+                        ctx.moveTo(x, y);
+                    } else {
+                        ctx.lineTo(x, y);
+                    }
+                }
+                ctx.stroke();
+
+                // Draw magnetization line
+                const magHistory = this.model.magnetizationHistory;
+                if (magHistory.length >= 2) {
+                    const minMag = Math.min(...magHistory);
+                    const maxMag = Math.max(...magHistory);
+                    const magRange = maxMag - minMag || 1;
+
+                    ctx.strokeStyle = '#27ae60';
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+
+                    for (let i = 0; i < magHistory.length; i++) {
+                        const x = (canvas.width / (magHistory.length - 1)) * i;
+                        const y = canvas.height - ((magHistory[i] - minMag) / magRange) * canvas.height;
+                        
+                        if (i === 0) {
+                            ctx.moveTo(x, y);
+                        } else {
+                            ctx.lineTo(x, y);
+                        }
+                    }
+                    ctx.stroke();
+                }
+
+                // Legend
+                ctx.fillStyle = '#2c3e50';
+                ctx.font = '12px Arial';
+                ctx.fillText('Red: Energy', 10, 20);
+                ctx.fillText('Green: Magnetization', 10, 35);
+            }
+
+            updateStats() {
+                const mag = this.model.magnetization();
+                const energy = this.model.totalEnergy();
+                const avgMag = this.model.magnetizationHistory.length > 0 ? 
+                    this.model.magnetizationHistory.reduce((sum, val) => sum + val, 0) / this.model.magnetizationHistory.length : 0;
+
+                document.getElementById('currentStep').textContent = this.model.step;
+                document.getElementById('magnetization').textContent = mag.toFixed(0);
+                document.getElementById('energy').textContent = energy.toFixed(0);
+                document.getElementById('avgMagnetization').textContent = avgMag.toFixed(1);
+            }
+        }
+
+        // Initialize the application
+        const visualizer = new Visualizer();
+    </script>
+</body>
+</html>
