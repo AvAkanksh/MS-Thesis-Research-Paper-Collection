@@ -1,0 +1,40 @@
+Name,Value
+Capital good firm number,50
+Consumption good firm number,200
+Bank number,1
+Household number,3000
+Simulation time,170
+R&D investment propensity,0.04
+R&D allocation to innovative search,0.5
+Innovation success rate,0.30154370100787864
+Imitation success rate,0.32224541674581325
+Beta dist parameter alpha1,3.0
+Beta dist parameter beta1,3.0
+Beta dist support lower,-0.2
+Beta dist support upper,0.35
+Payback period,3.0
+Mark up coefficient (capital),0.17492395739649863
+Mark up coefficient (consumption),0.5721598613160112
+Mark up rule coefficient,0.054752705348602035
+Min Client,5
+New customer sample parameter,0.039047758225434846
+Desired inventory,0.19614348283573307
+Physical scrapping age,20
+Cobb douglas alpha,0.3
+Interest rate,0.025
+Bank mark up coefficient,0.5
+Bank mark down coefficient,1.0
+Loan repayment rate,20.0
+Maximum capital expansion rate,0.1946541284014095
+Credit multiplier,4.0
+Maximum debt to sale ratio,2.0
+Wage setting parameter 1,0.7128214772603565
+Wage setting parameter 2,0.3447747090485656
+Wage setting parameter 3,0.0
+Competitiveness weight 1,0.8858576799642586
+Competitiveness weight 2,0.1383477823667137
+Tax rate,0.1
+Subsidy rate,0.4
+Replicator dynamics coefficient,0.05889538496820007
+Initial consumption employment rate,0.6639791558960639
+Labor growth rate,0.0
